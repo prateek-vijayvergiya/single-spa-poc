@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@prateek/root-config": "//localhost:9000/prateek-root-config.js",
+    "@prateek/dashboard": "//localhost:9002/prateek-dashboard.js",
+    "@prateek/navbar": "//localhost:9001/prateek-navbar.js",
+
+    "react" : "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js"
+  }
+}
