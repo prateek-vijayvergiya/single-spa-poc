@@ -71,11 +71,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
     <% if (isLocal) { %>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/system.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/extras/amd.js"></script>
     <% } else { %>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/extras/amd.min.js"></script>
     <% } %>
   </head>
   <body>
@@ -90,9 +90,9 @@
     >
       Dell EMC Atlantic
     </div>
-    <div style="display: flex; flex-direction: row;">
-      <div id="single-spa-application:@prateek/navbar"></div>
-      <div style="flex: 1;">
+    <div style="display: flex; flex-direction: row">
+      <div style="flex: auto" id="single-spa-application:@prateek/navbar"></div>
+      <div style="flex: 1">
         <div id="single-spa-application:@prateek/dashboard"></div>
         <div id="single-spa-application:@prateek/infrastructure"></div>
       </div>
@@ -105,5 +105,16 @@
       show-when-local-storage="devtools"
       dev-libs
     ></import-map-overrides-full>
+    <!-- <script
+      type="application/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.0.0/system.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.0.0/extras/amd.min.js"
+    ></script>
+    <script>
+      var SystemJS = System;
+    </script> -->
   </body>
 </html>
